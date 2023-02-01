@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-@import "~swiper/css/swiper.css";
+@import "~swiper/swiper.min.css";
 
 
 @font-face {
@@ -523,5 +523,9 @@ ul li:hover {
   background: rgba(#000000, 0.1);
 }
 .footer-date {
-  color: red;
+  color: #ffffff;
+}
+
+h6 {
+  color: black;
 }
