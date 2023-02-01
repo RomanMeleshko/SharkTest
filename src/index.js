@@ -1,5 +1,4 @@
-import $ from "jquery"
-import "../scss/main.scss"
+import $ from "jquery";
 import "bootstrap/js/dist/util";
 import Swiper from 'swiper';
 

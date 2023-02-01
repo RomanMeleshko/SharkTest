@@ -2,13 +2,18 @@ let path = require("path");
 let MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 let conf = {
-    entry: {
-        main: "./src/index.js"
-    },
+    entry: { main: './src/index.js' },
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: "[name].js",
-        publicPath: "dist/"
+        publicPath: "/dist/"
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, '/')
+        },
+        watchFiles: path.join(__dirname, 'src'),
+        historyApiFallback: true,
     },
     module: {
         rules: [
