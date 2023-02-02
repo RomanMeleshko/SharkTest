@@ -1,6 +1,8 @@
 import $ from "jquery";
 import "bootstrap/js/dist/util";
-import Swiper from 'swiper';
+import Swiper, {Navigation, Pagination} from 'swiper';
+
+Swiper.use( [Navigation, Pagination] );
 
 $( document ).ready(function() {
 
